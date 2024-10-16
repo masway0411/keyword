@@ -424,7 +424,7 @@
 		for(let db of data.data){
 			const localTime = await moment(db.c).tz(data.info.tz);
 			const time = localTime.format('YYYY-MM-DD[T]HH:mm:ss')+localTime.format('Z');
-			const url = "/?question="+db.name.replace(".gz","");
+			const url = "/?tugas="+db.name.replace(".gz","");
 			domUrl+=`<div class="rss2html-embed-item">
 	            <h2 class="rss2html-embed-item-title"><a href="`+url+`" class="rss2html-embed-item-link"> `+db.t+` </a></h2>
 	            <div class="rss2html-embed-item-body"> `+db.d+` </div>
